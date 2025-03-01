@@ -13,7 +13,10 @@ function todaydate(){
 
 }
 todaydate();
-
+let discover = document.getElementById("Discover");
+discover.addEventListener("click",function(){
+    window.location.href = "second.html";
+})
 
 let clearHistory = document.getElementById("btn7");
 clearHistory.addEventListener("click",function(){
@@ -233,6 +236,5 @@ btn6.addEventListener("click",function (){
     
 
 } )
-
 
 
