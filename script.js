@@ -1,3 +1,8 @@
+let colorMode = document.getElementById("mode");
+colorMode.addEventListener("click",function(){
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    document.body.style.backgroundColor = randomColor ;
+});
 
 function todaydate(){
     let date = document.getElementById("date");
@@ -233,6 +238,7 @@ btn6.addEventListener("click",function (){
     <p class="bg-[#F4F7FF] rounded-b-lg text-sm font-bold mb-5">
         ${p6}at ${totaltime}
     </p>`);
+    alert("you have complete all task");
     
 
 } )
